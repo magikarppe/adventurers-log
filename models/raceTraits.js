@@ -36,7 +36,7 @@ const raceTraitsSchema = new Schema({
     specialAbilities: {
         type: Array,
         default: null
-    }
+    }  
 });
 
 const RaceTraits = mongoose.model("Race Traits", raceTraitsSchema);
