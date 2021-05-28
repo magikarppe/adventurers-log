@@ -9,11 +9,19 @@
         "charisma": ,
         "speed": ,
         "languages": "",
-        "specialAbilities": 
+        "specialAbilities": [
         {
             "id": 1,
-            "ability": ""
+            "ability": "",
+            "desc": ""
+        },
+        {
+
+        },
+        {
+
         }
+    ]
     },
     {
         "id": 2,
