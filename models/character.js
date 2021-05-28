@@ -3,7 +3,7 @@ const { Schema } = mongoose;
 
 const charSchema = new Schema({
     name: { type: String, required: true },
-    raceId: mongoose.ObjectId,
+    raceID: mongoose.ObjectId,
     classId: mongoose.ObjectId,
     modifiersId: mongoose.ObjectId,
     description: { type: String, required: true },
