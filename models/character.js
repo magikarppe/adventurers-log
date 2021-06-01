@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const abilitiesSchema = new Schema({
@@ -61,10 +61,9 @@ const charSchema = new Schema({
         type: Date, 
         default: Date.now 
     },
-    userId: mongoose.objectId
 });
 
 
 const Character = mongoose.model("Character", charSchema);
 
-export default Character;
+module.exports = Character;
