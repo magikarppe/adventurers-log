@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
-const routes = require('./routes')
+const routes = require('./routes');
 const dotenv = require('dotenv');
 const PORT = process.env.PORT || 3001;
 
@@ -12,7 +12,7 @@ app.use(express.static("client/build"));
 
 app.use(routes);
 
-dotenv.config()
+dotenv.config();
 
 mongoose.connect(
     process.env.DATABASE_ACCESS, () =>console.log("Database is connected")
