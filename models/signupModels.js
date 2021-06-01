@@ -23,4 +23,6 @@ const signupModels = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose.model('adventuretable', signupModels)
+const User = mongoose.model('User', signupModels);
+
+module.exports = User;
