@@ -1,218 +1,581 @@
 [
     {
         "id": 1,
-        "strength": ,
-        "dexterity": ,
-        "constitution": ,
-        "intelligence": ,
-        "wisdom": ,
-        "charisma": ,
-        "speed": ,
-        "languages": "",
+
+        "strength": 2,
+        "dexterity": 0,
+        "constitution": 0,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 1,
+        "speed": 30,
+        "languages": "Common, Draconic",
         "specialAbilities": [
-        {
-            "id": 1,
-            "ability": "",
-            "desc": ""
-        },
-        {
+            {
+                "id": 1,
+                "ability": "Draconic Ancestry",
+                "description": "As a dragonborn, you have descendence from a type of dragon. Each different kind grants you different abilities. Select one from the following.",
+                "options": [
+                    {
+                        "id": 1,
+                        "dragon": "Black",
+                        "damage type": "Acid",
+                        "breath weapon": "5 by 30 ft. line (Dex. save)"
+                    },
+                    {
+                        "id": 2,
+                        "dragon": "Blue",
+                        "damage type": "Lightning",
+                        "breath weapon": "5 by 30 ft. line (Dex. save)"
+                    },
+                    {
+                        "id": 3,
+                        "dragon": "Brass",
+                        "damage type": "Fire",
+                        "breath weapon": "5 by 30 ft. line (Dex. save)"
+                    },
+                    {
+                        "id": 4,
+                        "dragon": "Bronze",
+                        "damage type": "Lightning",
+                        "breath weapon": "5 by 30 ft. line (Dex. save)"
+                    },
+                    {
+                        "id": 5,
+                        "dragon": "Copper",
+                        "damage type": "Acid",
+                        "breath weapon": "5 by 30 ft. line (Dex. save)"
+                    },
+                    {
+                        "id": 6,
+                        "dragon": "Gold",
+                        "damage type": "Fire",
+                        "breath weapon": "15 ft. cone (Dex. save)"
+                    },
+                    {
+                        "id": 7,
+                        "dragon": "Green",
+                        "damage type": "Poison",
+                        "breath weapon": "15 ft. cone (Dex. save)"
+                    },
+                    {
+                        "id": 8,
+                        "dragon": "Red",
+                        "damage type": "Fire",
+                        "breath weapon": "15 ft. cone (Dex. save)"
+                    },
+                    {
+                        "id": 9,
+                        "dragon": "Silver",
+                        "damage type": "Cold",
+                        "breath weapon": "15 ft. cone (Dex. save)"
+                    },
+                    {
+                        "id": 10,
+                        "dragon": "White",
+                        "damage type": "Cold",
+                        "breath weapon": "15 ft. cone (Dex. save)"
+                    }
+                ]
 
-        },
-        {
+            },
+            {
+                "id": 2,
+                "ability": "Breath Weapon",
+                "description": "Based off of your Draconic Ancestry, your Breath Weapon's size, shape, and damage type will vary. Instead of attacking or moving, you can use your action to weaponize your breath! Each character within the area of the exhalation must make a saving throw (what kind is defined by your ancestry). Saving throw DC (Difficulty Class) is 8+ Cons. modifier + your prof. bonus. Dmg = 2d6 on failed save, half as much damage on a successful save. Dmg increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. Once used, Breath Weapon can only be used again after a short or long rest."
+            },
+            {
+                "id": 3,
+                "ability": "Damage Resistance",
+                "description": "You're resistant to the damage type associated with your Draconic Ancestry!"
+            }
+        ]
 
-        }
-    ]
     },
+    
     {
         "id": 2,
-        "strength": ,
-        "dexterity": ,
-        "constitution": ,
-        "intelligence": ,
-        "wisdom": ,
-        "charisma": ,
-        "speed": ,
-        "languages": "",
-        "specialAbilities": 
-        {
-            "id": 1,
-            "ability": ""
-        }
+        "strength": 0,
+        "dexterity": 0,
+        "constitution": 2,
+        "intelligence": 0,
+        "wisdom": 100,
+        "charisma": 0,
+        "speed": 25,
+        "languages": "Common, Dwarvish",
+        "specialAbilities": [
+            {
+                "id": 1,
+                "ability": "Darkvision",
+                "description": "Living underground has its perks-- You can see well in dim and dark conditions! You can see as far as 60ft from you in dim-lit areas as if it were bright as day, and in darkness as if it were dim light. Color is undistinguishable, only shades of gray."
+            },
+            {
+                "id": 2,
+                "ability": "Dwarven Resilience",
+                "description": "You have saving throw advantages against poison, and you have resistance against poison damage. In other words, you can roll twice when attempting a saving throw against poison and keep the highest roll, and since you're resistant to poison, you take half the original damage. "
+            },
+            {
+                "id": 3,
+                "ability": "Dwarven Combat Training",
+                "description": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer. In other words, this just means you can chose using one of the aforementioned weapons."
+            },
+            {
+                "id": 4,
+                "ability": "Tool Proficiency",
+                "description": "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools."
+            },
+            {
+                "id": 5,
+                "ability": "Stonecunning",
+                "description": "Instead of your normal proficiency bonus, you are considered proficient in the History skill and add double your proficiency bonus to the check anytime you make an Intelligence (History) check related to the origin of stonework."
+            },
+            {
+                "id": 6,
+                "ability": "Dwarven Toughness (Hill Dwarf)",
+                "description": "As a Hill Dwarf, you get +1 on your Hit Point (HP) maximum, and it increases by 1 every time you gain a level."
+            }
+        ]
     },
+
     {
         "id": 3,
-        "strength": ,
-        "dexterity": ,
-        "constitution": ,
-        "intelligence": ,
-        "wisdom": ,
-        "charisma": ,
-        "speed": ,
-        "languages": "",
-        "specialAbilities": 
-        {
-            "id": 1,
-            "ability": ""
-        }
+        "strength": 2,
+        "dexterity": 0,
+        "constitution": 2,
+        "intelligence": 0,
+        "wisdom": 1,
+        "charisma": 0,
+        "speed": 25,
+        "languages": "Common, Dwarvish",
+        "specialAbilities": [
+            {
+                "id": 1,
+                "ability": "Darkvision",
+                "description": "Living underground has its perks-- You can see well in dim and dark conditions! You can see as far as 60ft from you in dim-lit areas as if it were bright as day, and in darkness as if it were dim light. Color is undistinguishable, only shades of gray."
+            },
+            {
+                "id": 2,
+                "ability": "Dwarven Resilience",
+                "description": "You have saving throw advantages against poison, and you have resistance against poison damage. In other words, you can roll twice when attempting a saving throw against poison and keep the highest roll, and since you're resistant to poison, you take half the original damage. "
+            },
+            {  
+                "id": 3,
+                "ability": "Dwarven Combat Training",
+                "description": "You have proficiency with the battleaxe, handaxe, light hammer, and warhammer. I other words, this just means you can chose using one of the aforementioned weapons."
+            },
+            {
+                "id": 4,
+                "ability": "Tool Proficiency",
+                "description": "You gain proficiency with the artisan’s tools of your choice: smith’s tools, brewer’s supplies, or mason’s tools."
+            },
+            {
+                "id": 5,
+                "ability": "Stonecunning",
+                "description": "Instead of your normal proficiency bonus, you are considered proficient in the History skill and add double your proficiency bonus to the check anytime you make an Intelligence (History) check related to the origin of stonework."
+            },
+            {
+                "id": 6,
+                "ability": "Dwarven Armor Training (Mountain Dwarf)",
+                "description": "As a Mountain Dwarf, you have proficiency with light and medium armor."
+            }
+        ]
     },
+    
+
     {
         "id": 4,
-        "strength": ,
-        "dexterity": ,
-        "constitution": ,
-        "intelligence": ,
-        "wisdom": ,
-        "charisma": ,
-        "speed": ,
-        "languages": "",
-        "specialAbilities": 
-        {
-            "id": 1,
-            "ability": ""
-        }
+        "strength": 0,
+        "dexterity": 2,
+        "constitution": 0,
+        "intelligence": 1,
+        "wisdom": 0,
+        "charisma": 0,
+        "speed": 30,
+        "languages": "Common, Elvish, and 1 extra language of your choice.",
+        "specialAbilities": [
+            {   
+                "id": 1,
+                "ability": "Darkvision",
+                "description": "Your familiarity to crepuscular forests and starry night skies allows you to have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+            },
+            {
+                "id": 2,
+                "ability": "Keen Senses",
+                "description": "You have proficiency in Perception!"
+            },
+            {
+                "id": 3,
+                "ability": "Fey Ancestry",
+                "description": "You have advantage on saving throws against being charmed, and magic can’t put you to sleep."
+            },
+            {
+                "id": 4,
+                "ability": "Elf Weapon Training",
+                "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow. In other words, this just means you can chose using one of the aforementioned weapons."
+            },
+            {
+                "id": 5,
+                "ability": "Trance",
+                "description": "Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (They call it the \"the trance\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+            },
+            {
+                "id": 6,
+                "ability": "Cantrip",
+                "description": "You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it."
+            }
+        ]
     },
     {
         "id": 5,
-        "strength": ,
-        "dexterity": ,
-        "constitution": ,
-        "intelligence": ,
-        "wisdom": ,
-        "charisma": ,
-        "speed": ,
-        "languages": "",
-        "specialAbilities": 
-        {
-            "id": 1,
-            "ability": ""
-        }
+        "strength": 0,
+        "dexterity": 2,
+        "constitution": 0,
+        "intelligence": 0,
+        "wisdom": 1,
+        "charisma": 0,
+        "speed": 35,
+        "languages": "Common, Elvish",
+        "specialAbilities": [
+            {   
+                "id": 1,
+                "ability": "Darkvision",
+                "description": "Your familiarity to crepuscular forests and starry night skies allows you to have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+            },
+            {
+                "id": 2,
+                "ability": "Keen Senses",
+                "description": "You have proficiency in Perception!"
+            },
+            {
+                "id": 3,
+                "ability": "Fey Ancestry",
+                "description": "You have advantage on saving throws against being charmed and magic can’t put you to sleep."
+            },
+            {
+                "id": 5,
+                "ability": "Elf Weapon Training",
+                "description": "You have proficiency with the longsword, shortsword, shortbow, and longbow. In other words, this just means you can chose using one of the aforementioned weapons."
+            },
+            {
+                "id": 5,
+                "ability": "Trance",
+                "description": "Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (They call it \"the trance\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+            },
+            {
+                "id": 6,
+                "ability": "Fleet of Foot",
+                "description": "Your base walking speed increases to 35 feet."
+            },
+            {
+                "id": 7,
+                "ability": "Mask of the Wild",
+                "description": "You can try to hide even when you are only slightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+            }
+        ]
     },
     {
         "id": 6,
-        "strength": ,
-        "dexterity": ,
-        "constitution": ,
-        "intelligence": ,
-        "wisdom": ,
-        "charisma": ,
-        "speed": ,
-        "languages": "",
-        "specialAbilities": 
-        {
-            "id": 1,
-            "ability": ""
-        }
+        "strength": 0,
+        "dexterity": 2,
+        "constitution": 0,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 1,
+        "speed": 30,
+        "languages": "Common, Elvish",
+        "specialAbilities": [
+            {   "id": 1,
+                "ability": "Superior Darkvision",
+                "description": "Darkness? Ha! Your middle name is darkness. Your Darkvision has a 120ft. radius due to you basically living in the dark!"
+            },
+            {
+                "id": 2,
+                "ability": "Keen Senses",
+                "description": "You have proficiency in Perception!"
+            },
+            {
+                "id": 3,
+                "ability": "Fey Ancestry",
+                "description": "You have advantage on saving throws against being charmed, and magic can’t put you to sleep."
+            },
+            {
+                "id": 4,
+                "ability": "Trance",
+                "description": "Elves don’t need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (They call it \"the trance\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+            },
+            {
+                "id": 5,
+                "ability": "Sunlight Sensitivity",
+                "description": "Like the little moles that Drow have become, you're sensitive to the bright sunlight. Because of that, you have disadvantage on Attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight."
+            },
+            {
+                "id": 6,
+                "ability": "Drow Magic",
+                "description": "You know the \"dancing lights\" cantrip. When you reach 3rd level, you can cast the \"faerie fire\" spell once with this trait and regain the ability to do so when you finish a long rest. At 5th level, you can cast \"darkness\" spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your recasting ability for these spells."
+            },
+            {
+                "id": 7,
+                "ability": "Drow Weapon Training",
+                "description": "You have proficiency with rapiers, shortswords, and hand crossbows. In other words, these are the weapons you can choose from."
+            }
+        ]
     },
+    
     {
         "id": 7,
-        "strength": ,
-        "dexterity": ,
-        "constitution": ,
-        "intelligence": ,
-        "wisdom": ,
-        "charisma": ,
-        "speed": ,
-        "languages": "",
-        "specialAbilities": 
-        {
-            "id": 1,
-            "ability": ""
-        }
+        "strength": 0,
+        "dexterity": 1,
+        "constitution": 0,
+        "intelligence": 2,
+        "wisdom": 0,
+        "charisma": 0,
+        "speed": 25,
+        "languages": "Common, Gnomish",
+        "specialAbilities": [
+            {   "id": 1,
+                "ability": "Darkvision",
+                "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+            },
+            {
+                "id": 2,
+                "ability": "Gnome Cunning",
+                "description": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+            },
+            {
+                "id": 3,
+                "ability": "Natural Illusionist",
+                "description": "You know the minor illusion cantrip. Intelligence is your spellcasting ability for it."
+            },
+            {
+                "id": 4,
+                "ability": "Speak with Small Beasts",
+                "description": "Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
+            }
+        ]
     },
+
     {
         "id": 8,
-        "strength": ,
-        "dexterity": ,
-        "constitution": ,
-        "intelligence": ,
-        "wisdom": ,
-        "charisma": ,
-        "speed": ,
-        "languages": "",
-        "specialAbilities": 
-        {
-            "id": 1,
-            "ability": ""
-        }
+        "strength": 0,
+        "dexterity": 0,
+        "constitution": 1,
+        "intelligence": 2,
+        "wisdom": 0,
+        "charisma": 0,
+        "speed": 25,
+        "languages": "Common, Gnomish",
+        "specialAbilities": [
+            {   "id": 1,
+                "ability": "Darkvision",
+                "description": "Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+            },
+            {
+                "id": 2,
+                "ability": "Gnome Cunning",
+                "description": "You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+            },
+            {
+                "id": 3,
+                "ability": "Artificer’s Lore",
+                "description": "Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply."
+            },
+            {
+                "id": 4,
+                "ability": "Tinker",
+                "description": "You have proficiency with artisan’s tools (tinker’s tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to build a Tiny clockwork device (AC 5, 1 hp). The device stops working after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three of these  devices active at a time. When creating a device, choose one of the following options.", 
+                "options": [
+                    {
+                        "id": 1,
+                        "option": "Clockwork Toy",
+                        "description": "This toy is a clockwork animal, monster, or person, like a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises that whatever creature it represents would make."
+                    },
+                    {
+                        "id": 2,
+                        "option": "Fire Starter",
+                        "description": "This device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using it requires your action."
+                    },
+                    {
+                        "id": 3,
+                        "option": "Music Box",
+                        "description": "When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song’s end or when it is closed."
+                    }
+                ]
+            }
+        ]
     },
+
+
     {
         "id": 9,
-        "strength": ,
-        "dexterity": ,
-        "constitution": ,
-        "intelligence": ,
-        "wisdom": ,
-        "charisma": ,
-        "speed": ,
-        "languages": "",
-        "specialAbilities": 
-        {
-            "id": 1,
-            "ability": ""
-        }
+        "strength": 0,
+        "dexterity": 0,
+        "constitution": 0,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 2,
+        "speed": 30,
+        "languages": "Common, Elvish, and 1 extra language of your choice.",
+        "specialAbilities": [
+            {   "id": 1,
+                "ability": "Darkvision",
+                "description": "Thanks to your elf blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+            },
+            {
+                "id": 2,
+                "ability": "Fey Ancestry",
+                "description": "You have advantage on saving throws against being charmed, and magic can’t put you to sleep."
+            },
+            {
+                "id": 4,
+                "ability": "Skill Versatility",
+                "description": "You gain proficiency in two skills of your choice."
+            }
+        ]
     },
+
+    
     {
         "id": 10,
-        "strength": ,
-        "dexterity": ,
-        "constitution": ,
-        "intelligence": ,
-        "wisdom": ,
-        "charisma": ,
-        "speed": ,
-        "languages": "",
-        "specialAbilities": 
-        {
-            "id": 1,
-            "ability": ""
-        }
+        "strength": 0,
+        "dexterity": 2,
+        "constitution": 0,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 1,
+        "speed": 25,
+        "languages": "Common, Halfling",
+        "specialAbilities": [
+            {   "id": 1,
+                "ability": "Lucky",
+                "description": "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die. However, whatever you get from the new roll must be used."
+            },
+            {
+                "id": 2,
+                "ability": "Brave",
+                "description": "You have advantage on saving throws against being frightened."
+            },
+            {
+                "id": 4,
+                "ability": "Halfling Nimbleness",
+                "description": "You can move through the space of any creature that is of a size larger than yours."
+            },
+            {
+                "id": 4,
+                "ability": "Naturally Stealthy",
+                "description": "You can attempt to hide even when you are obscured only by a creature that is at least one size larger than you."
+            }
+        ]
     },
+
+    
     {
         "id": 11,
-        "strength": ,
-        "dexterity": ,
-        "constitution": ,
-        "intelligence": ,
-        "wisdom": ,
-        "charisma": ,
-        "speed": ,
-        "languages": "",
-        "specialAbilities": 
-        {
-            "id": 1,
-            "ability": ""
-        }
+        "strength": 0,
+        "dexterity": 2,
+        "constitution": 1,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 0,
+        "speed": 25,
+        "languages": "Common, Halfling",
+        "specialAbilities": [
+            {   "id": 1,
+                "ability": "Lucky",
+                "description": "When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die. However, whatever you get from the new roll must be used."
+            },
+            {
+                "id": 2,
+                "ability": "Brave",
+                "description": "You have advantage on saving throws against being frightened."
+            },
+            {
+                "id": 4,
+                "ability": "Halfling Nimbleness",
+                "description": "You can move through the space of any creature that is of a size larger than yours."
+            },
+            {
+                "id": 4,
+                "ability": "Stout Resilience",
+                "description": "You have advantage on saving throws against poison, and you have resistance against poison damage."
+            }
+        ]
     },
+
+
     {
         "id": 12,
-        "strength": ,
-        "dexterity": ,
-        "constitution": ,
-        "intelligence": ,
-        "wisdom": ,
-        "charisma": ,
-        "speed": ,
-        "languages": "",
-        "specialAbilities": 
-        {
-            "id": 1,
-            "ability": ""
-        }
+        "strength": 2,
+        "dexterity": 0,
+        "constitution": 1,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 0,
+        "speed": 30,
+        "languages": "Common, Orc",
+        "specialAbilities": [
+            {   "id": 1,
+                "ability": "Darkvision",
+                "description": "Thanks to your orc blood, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+            },
+            {
+                "id": 2,
+                "ability": "Menacing",
+                "description": "You gain proficiency in the Intimidation skill."
+            },
+            {
+                "id": 3,
+                "ability": "Relentless Endurance",
+                "description": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can’t use this feature again until you finish a long rest."
+            },
+            {
+                "id": 4,
+                "ability": "Savage Attacks",
+                "description": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the extra damage of the critical hit."
+            }
+        ]
     },
+
+    
     {
         "id": 13,
-        "strength": ,
-        "dexterity": ,
-        "constitution": ,
-        "intelligence": ,
-        "wisdom": ,
-        "charisma": ,
-        "speed": ,
-        "languages": "",
-        "specialAbilities": 
-        {
-            "id": 1,
-            "ability": ""
-        }
+        "strength": 1,
+        "dexterity": 1,
+        "constitution": 1,
+        "intelligence": 1,
+        "wisdom": 1,
+        "charisma": 1,
+        "speed": 30,
+        "languages": "Common, 1 extra language of your choice",
+        "specialAbilities": [
+            {   "id": 1,
+                "ability": "Ability Score Increase",
+                "description": "As a human, all ability scores each increase by 1 (which is already applied). Check with your DM about the Variant Human, as we have not included those yet."
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "strength": 0,
+        "dexterity": 0,
+        "constitution": 0,
+        "intelligence": 1,
+        "wisdom": 0,
+        "charisma": 2,
+        "speed": 30,
+        "languages": "Common, Infernal",
+        "specialAbilities": [
+            {   "id": 1,
+                "ability": "Darkvision",
+                "description": "Your infernal heritage grants you better vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray."
+            },
+            {   "id": 2,
+                "ability": "Hellish Resistance",
+                "description": "You have resistance to fire damage!"
+            },
+            {   "id": 3,
+                "ability": "Infernal Legacy",
+                "description": "You know the thaumaturgy cantrip. When you reach 3rd level, you can cast the hellish rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the darkness spell once with this trait and regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+            }
+        ]
     }
 ]
