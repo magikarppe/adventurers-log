@@ -1,6 +1,7 @@
 [
     {
         "id": 1,
+
         "strength": 2,
         "dexterity": 0,
         "constitution": 0,
@@ -89,6 +90,7 @@
                 "description": "You're resistant to the damage type associated with your Draconic Ancestry!"
             }
         ]
+
     },
     
     {
