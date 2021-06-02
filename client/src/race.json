@@ -46,21 +46,26 @@
   },
   {
     "id": 10,
-    "race": "Halfling",
-    "description": "Much like children, halflings are a happy, friendly, and comfortable race. Also like children, they don't grow past 3ft. UNLIKE children, however, many halflings are happier living a calm life at home rather than in a rambunctious adventuring party (although the adventurous type exists nontheless, or else this wouldn't be D&D!)."
+    "race": "Lightfoot Halfling",
+    "description": "Much like children, Lightfoot Halflings are a happy, friendly, and adventurous race. Also like children, they don't grow past 3ft. Most halflings are happier living a calm life at home rather than in a rambunctious adventuring party, but the Lightfoot Halflings are the most susceptible to be the thrill-seekers of the race."
   },
   {
     "id": 11,
+    "race": "Stout Halfling",
+    "description": "The hardier of the two, Stout Halflings are pretty close to having dwarven blood. Their brawn gives them some resistance to poison."
+  },
+  {
+    "id": 12,
     "race": "Half-Orc",
     "description": "Mainly as a result of human-orc alliance marriages, half-orcs are like a \"smarter\" version of orcs. They oftentimes live with \"Orcish\" lifestyles, displaying their barbaric mannerisms and habits with pride. Sometimes, their human parallels compel them to want more, leading them to seek the \"human\" experience, or even join adventuring parties in search of a use for their brute strength, fortitude, and human-derived resolve."
   },
   {
-    "id": 12,
+    "id": 13,
     "race": "Human",
     "description": "You know 'em, you love 'em, they're the white bread of D&D races-- Humans! Due to having such a shorter life expectancy than other races, humans have an immense drive to do whatever it is they set their minds to. Due to that, they are extremely adaptable, diverse, and zealous."
   },
   {
-    "id": 13,
+    "id": 14,
     "race": "Tiefling",
     "description": "A consequence of a pact made generations ago with none other than the overlord of the Nine Hells, Asmodeus, Tieflings are cursed with a devilish appearance and nature. Horns in all shapes and sizes, thick tails that go up to four or five ft. long, you get the picture, right? Tieflings are often the victims of ostracization, developing untrusting, sneaky, head-strong but also loyal personalities."
   }
