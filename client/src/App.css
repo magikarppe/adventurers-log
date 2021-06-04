@@ -1,11 +1,22 @@
 .App {
   text-align: center;
+  background-image: url("oldpaperbackground.jpg");
 }
 
+.start {
+  height:800px;
+}
+
+.App-intro {
+  font-size: large;
+  }
+
+  /*
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
+
 
 .App-header {
   background-color: #222;
@@ -13,12 +24,17 @@
   padding: 20px;
   color: white;
 }
-
-.App-intro {
-  font-size: large;
+ 
+/* prevents print screen but not screenshot
+  @media print {
+    html, body {
+       display: none;  /* hide whole page */
+  /*  }
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+} */
+
+
