@@ -25,7 +25,14 @@
   padding: 20px;
   color: white;
 }
- 
+
+.href {
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
 /* prevents print screen but not screenshot
   @media print {
     html, body {

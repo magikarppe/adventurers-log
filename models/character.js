@@ -48,7 +48,7 @@ const charSchema = new Schema({
         type: String, 
         required: true 
     },
-    classId: { 
+    class: { 
         type: String, 
         required: true 
     },
