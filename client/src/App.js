@@ -1,29 +1,33 @@
+import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import AllCharactersPage from './pages/allCharacters';
 import NewCharacterPage from './pages/newCharacter';
 import MyCharactersPage from './pages/myCharacters';
 import LoginPage from './pages/login';
+import Layout from './components/layout/Layout';
 
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <Switch>
-        <Route path='/' exact>
-          <AllCharactersPage />
-        </Route>
-        <Route path='/newCharacter'>
-          <NewCharacterPage />
-        </Route>
-        <Route path='/myCharacters'>
-          <MyCharactersPage />
-        </Route>
-        <Route path='/login'>
-          <LoginPage />
-        </Route>
-      </Switch>
+      <Layout>
+        <Switch>
+          <Route path='/' exact>
+            <AllCharactersPage />
+          </Route>
+          <Route path='/newCharacter'>
+            <NewCharacterPage />
+          </Route>
+          <Route path='/myCharacters'>
+            <MyCharactersPage />
+          </Route>
+          <Route path='/login'>
+            <LoginPage />
+          </Route>
+        </Switch>
+      </Layout>
     </div>
   );
 }
