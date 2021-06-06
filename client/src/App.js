@@ -1,5 +1,10 @@
-import React, { Component } from "react";
-//import OldPaper from "./background.svg";
+import { Route, Switch } from 'react-router-dom';
+
+import AllCharactersPage from './pages/allCharacters';
+import NewCharacterPage from './pages/newCharacter';
+import MyCharactersPage from './pages/myCharacters';
+import LoginPage from './pages/login';
+
 import "./App.css";
 import Nav from "./components/Navbar/navbar"
 import Navbar from 'react-bootstrap/Navbar'
@@ -19,14 +24,21 @@ import {
 function App() {
   
   return (
-    <div className="App">
-        <div className="Navbar">
-          <Nav />
-        </div>
-      <p className="App-intro"> 
-            Welcome Adventurers! Are you ready for you own personalized journey within the ever so wonderful Dungeon and Dragons?
-      </p>
-      <p>You are? Okay, let's start with your character.</p>
+    <div>
+      <Switch>
+        <Route path='/' exact>
+          <AllCharactersPage />
+        </Route>
+        <Route path='/newCharacter'>
+          <NewCharacterPage />
+        </Route>
+        <Route path='/myCharacters'>
+          <MyCharactersPage />
+        </Route>
+        <Route path='/login'>
+          <LoginPage />
+        </Route>
+      </Switch>
     </div>
   );
 
