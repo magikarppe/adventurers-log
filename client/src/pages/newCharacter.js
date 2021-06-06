@@ -1,21 +1,15 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import NewCharacterForm from "../components/Characters/NewCharacterForm";
+import API from '../utils/API'
 
 function NewCharacterPage() {
     const history = useHistory();
 
   function addCharacterHandler(characterData) {
-    fetch(
-      "/api/characters",
-      {
-        method: "POST",
-        body: JSON.stringify(characterData),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    ).then(() => {
+    console.log(characterData)
+    API.saveCharacter(characterData)
+      .then(() => {
         history.replace('/');
     });
   }

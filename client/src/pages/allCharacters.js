@@ -10,9 +10,6 @@ function AllCharactersPage() {
   useEffect(() => {
     setIsLoading(true);
     API.getCharacters()
-      .then((response) => {
-        return response.json();
-      })
       .then((data) => {
         const characters = [];
 

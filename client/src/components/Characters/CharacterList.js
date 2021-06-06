@@ -10,7 +10,8 @@ function CharacterList(props) {
                     id={character.id}
                     name={character.name}
                     race={character.race}
-                    bio={character.bio}
+                    class={character.classId}
+                    description={character.description}
                 />
             )}
         </ul>
