@@ -8,8 +8,23 @@ import LoginPage from './pages/login';
 import Layout from './components/layout/Layout';
 
 import "./App.css";
+import Nav from "./components/Navbar/navbar"
+import Navbar from 'react-bootstrap/Navbar'
+import Container from 'react-bootstrap/Container'
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
+
+
 
 function App() {
+  
   return (
     <div>
       <Layout>
@@ -30,6 +45,10 @@ function App() {
       </Layout>
     </div>
   );
+
+
+
+
 }
 
 
@@ -40,3 +59,9 @@ export default App;
 
 //Background Code
 //<img src={OldPaper} className="Background" alt="OldPaper" />
+
+// <div className="App-header"> 
+        
+//<h2>Adventurers Log</h2>
+  
+//</div>
