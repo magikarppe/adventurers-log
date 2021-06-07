@@ -5,7 +5,7 @@ import { Row } from 'react-bootstrap';
 function CharacterList(props) {
     return (
         <ul>
-            <Row>
+            <Row className="justify-content-center">
             {props.characters.map(character => 
                 <CharacterItem 
                     key={character._id} 
