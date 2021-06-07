@@ -1,6 +1,6 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
-
+import 'bootstrap/dist/css/bootstrap.css';
+import { Switch, Route } from "react-router-dom";
 import AllCharactersPage from './pages/allCharacters';
 import NewCharacterPage from './pages/newCharacter';
 import MyCharactersPage from './pages/myCharacters';
@@ -8,18 +8,8 @@ import LoginPage from './pages/login';
 import Layout from './components/layout/Layout';
 
 import "./App.css";
-import Nav from "./components/Navbar/navbar"
-import Navbar from 'react-bootstrap/Navbar'
-import Container from 'react-bootstrap/Container'
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
-} from "react-router-dom";
+
 
 
 
