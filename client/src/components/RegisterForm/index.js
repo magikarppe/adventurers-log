@@ -1,34 +1,89 @@
-import React, { useRef } from 'react'
-import Card from "../Card"
+import React, { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from "react-redux";
+import { Button, Form, Message, Segment, Label } from 'semantic-ui-react';
+import { Field, reduxForm } from "redux-form";
+import { clearErrors } from "../actions/authActions";
 
-// class RegisterForm extends React.Component {
-function RegisterForm({ onRegister }) {
-	// refs
-	const formRef = useRef();
-	const userNameRef = useRef();
-	const passwordRef = useRef();
+const RegisterForm = (props) => {
+    console.log(props);
+    const error = useSelector(state => state.errors);
+    const [errorMessage, setErrorMessage] = useState("");
 
-	return (
-		<Card title="Register a New User">
-			<form
-				ref={formRef}
-				onSubmit={(e) => {
-					e.preventDefault();
-					return onRegister({
-						username: userNameRef.current.value,
-						password: passwordRef.current.value
-					});
-				}}
-			>
-				<div className="form-group">
-					<input className="form-control" ref={userNameRef} type='text' name="username" placeholder='Enter Username' /><br />
-					<input className="form-control" ref={passwordRef} type='password' name="password" placeholder='Password' /><br />
-					<button className="btn btn btn-primary" type='submit'>Submit</button>
-				</div>
-			</form>
-		</Card>
-	)
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+
+        if (error.message) {
+            setErrorMessage(error.message)
+            dispatch(clearErrors())
+        }
+        
+    }, [error])
+
+    return (
+        <>
+
+            <Form onSubmit={props.handleSubmit(props.onSubmit)} size='large'>
+
+                <Segment>
+                    <Field
+                        name="firstname"
+                        component={renderInput}
+                        label="Enter Name"
+                    />
+                    <Field
+                        name="lastname"
+                        component={renderInput}
+                        label="Enter Last name"
+                    />
+                    <Field
+                        name="email"
+                        component={renderInput}
+                        label="E-mail address"
+                    />
+                    {errorMessage ? <Label className="alertMssg" basic color='red'>{errorMessage}</Label> : ""}
+                    <Field
+                        name="password"
+                        component={renderInput}
+                        label="Password"
+                    />
+                    <Button secondary fluid size='large'>
+                        {props.buttonText}
+                    </Button>
+                </Segment>
+            </Form>
+            <Message>
+                {props.renderMessage()}
+            </Message>
+        </>
+    )
+}
+
+const renderInput = ({ input, label }) => {
+
+    const selectIcon = () => {
+
+        if (input.name === "email" || input.name === "firstname" || input.name === "lastname") {
+            return "user icon"
+        } else {
+            return "lock icon"
+        }
+
+    }
+
+    return (
+
+        <div className="field">
+            <div className="ui fluid left icon input">
+                <input {...input} autoComplete="off" placeholder={label} type={`${input.name !== "password" ? "text" : "password"}`} />
+                <i aria-hidden="true" className={selectIcon()}></i>
+            </div>
+        </div>
+
+    )
 }
 
 
-export default RegisterForm
+export default reduxForm({
+    form: "registerform"
+})(RegisterForm)
