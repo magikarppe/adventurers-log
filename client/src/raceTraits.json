@@ -1,83 +1,82 @@
 [
-    {"Race": {
-        "Dragonborn": {
-            "strength": 2,
-            "dexterity": 0,
-            "constitution": 0,
-            "intelligence": 0,
-            "wisdom": 0,
-            "charisma": 1,
-            "speed": 30,
-            "languages": "Common, Draconic",
-            "specialAbilities": {    
-                "ability1": {
-                    "ability": "Draconic Ancestry",
-                    "description": "As a dragonborn, you have descendence from a type of dragon. Each different kind grants you different abilities. Select one from the following.",
-                    "options": [
-                        {
-                            "id": 1,
-                            "dragon": "Black",
-                            "damage type": "Acid",
-                            "breath weapon": "5 by 30 ft. line (Dex. save)"
-                        },
-                        {
-                            "id": 2,
-                            "dragon": "Blue",
-                            "damage type": "Lightning",
-                            "breath weapon": "5 by 30 ft. line (Dex. save)"
-                        },
-                        {
-                            "id": 3,
-                            "dragon": "Brass",
-                            "damage type": "Fire",
-                            "breath weapon": "5 by 30 ft. line (Dex. save)"
-                        },
-                        {
-                            "id": 4,
-                            "dragon": "Bronze",
-                            "damage type": "Lightning",
-                            "breath weapon": "5 by 30 ft. line (Dex. save)"
-                        },
-                        {
-                            "id": 5,
-                            "dragon": "Copper",
-                            "damage type": "Acid",
-                            "breath weapon": "5 by 30 ft. line (Dex. save)"
-                        },
-                        {
-                            "id": 6,
-                            "dragon": "Gold",
-                            "damage type": "Fire",
-                            "breath weapon": "15 ft. cone (Dex. save)"
-                        },
-                        {
-                            "id": 7,
-                            "dragon": "Green",
-                            "damage type": "Poison",
-                            "breath weapon": "15 ft. cone (Dex. save)"
-                        },
-                        {
-                            "id": 8,
-                            "dragon": "Red",
-                            "damage type": "Fire",
-                            "breath weapon": "15 ft. cone (Dex. save)"
-                        },
-                        {
-                            "id": 9,
-                            "dragon": "Silver",
-                            "damage type": "Cold",
-                            "breath weapon": "15 ft. cone (Dex. save)"
-                        },
-                        {
-                            "id": 10,
-                            "dragon": "White",
-                            "damage type": "Cold",
-                            "breath weapon": "15 ft. cone (Dex. save)"
-                        }
-                    ]
-                }
-            }
-        },
+
+    {
+        "id": 1,
+        "strength": 2,
+        "dexterity": 0,
+        "constitution": 0,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 1,
+        "speed": 30,
+        "languages": "Common, Draconic",
+        "specialAbilities": [
+            {
+                "id": 1,
+                "ability": "Draconic Ancestry",
+                "description": "As a dragonborn, you have descendence from a type of dragon. Each different kind grants you different abilities. Select one from the following.",
+                "options": [
+                    {
+                        "id": 1,
+                        "dragon": "Black",
+                        "damage type": "Acid",
+                        "breath weapon": "5 by 30 ft. line (Dex. save)"
+                    },
+                    {
+                        "id": 2,
+                        "dragon": "Blue",
+                        "damage type": "Lightning",
+                        "breath weapon": "5 by 30 ft. line (Dex. save)"
+                    },
+                    {
+                        "id": 3,
+                        "dragon": "Brass",
+                        "damage type": "Fire",
+                        "breath weapon": "5 by 30 ft. line (Dex. save)"
+                    },
+                    {
+                        "id": 4,
+                        "dragon": "Bronze",
+                        "damage type": "Lightning",
+                        "breath weapon": "5 by 30 ft. line (Dex. save)"
+                    },
+                    {
+                        "id": 5,
+                        "dragon": "Copper",
+                        "damage type": "Acid",
+                        "breath weapon": "5 by 30 ft. line (Dex. save)"
+                    },
+                    {
+                        "id": 6,
+                        "dragon": "Gold",
+                        "damage type": "Fire",
+                        "breath weapon": "15 ft. cone (Dex. save)"
+                    },
+                    {
+                        "id": 7,
+                        "dragon": "Green",
+                        "damage type": "Poison",
+                        "breath weapon": "15 ft. cone (Dex. save)"
+                    },
+                    {
+                        "id": 8,
+                        "dragon": "Red",
+                        "damage type": "Fire",
+                        "breath weapon": "15 ft. cone (Dex. save)"
+                    },
+                    {
+                        "id": 9,
+                        "dragon": "Silver",
+                        "damage type": "Cold",
+                        "breath weapon": "15 ft. cone (Dex. save)"
+                    },
+                    {
+                        "id": 10,
+                        "dragon": "White",
+                        "damage type": "Cold",
+                        "breath weapon": "15 ft. cone (Dex. save)"
+                    }
+                ]
 
             {
                 "id": 2,
