@@ -1,18 +1,22 @@
 import React from 'react';
-import Card from "../ui/Card";
+import CardComponent from "../ui/Card";
+import { Col, Card } from 'react-bootstrap';
 
 function CharacterItem(props) {    
-
+    console.log(props);
     return (
-        <li>
-            <Card>
-                <div>
-                    <h2>{props.name}</h2>
-                    <h3>{props.race}</h3>
+        <Col md={4}>
+            <CardComponent>
+                <Card.Body>
+                    
+                    <h4>{props.name}</h4>
+                    <h6>{props.race}</h6>
+                    <h6>{props.class}</h6>
                     <p>{props.description}</p>
-                </div>
-            </Card>
-        </li>
+                    
+                </Card.Body>
+            </CardComponent>
+        </Col>
     );
 }
 

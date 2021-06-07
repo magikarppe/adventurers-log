@@ -1,7 +1,8 @@
 import React from 'react';
+import { Card } from 'react-bootstrap';
 
-function Card(props) {
-    return <div className="card">{props.children}</div>
+function CardComponent(props) {
+    return <Card style={{}}>{props.children}</Card>
 }
 
-export default Card;
+export default CardComponent;

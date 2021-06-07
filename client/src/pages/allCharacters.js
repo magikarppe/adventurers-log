@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import CharacterList from "../components/Characters/CharacterList";
 import API from '../utils/API';
+import { Container } from 'react-bootstrap';
 
 
 function AllCharactersPage() {
@@ -11,17 +12,18 @@ function AllCharactersPage() {
     setIsLoading(true);
     API.getCharacters()
       .then((data) => {
+        console.log(data.data);
         const characters = [];
 
-        for (const key in data) {
+        for (const key in data.data) {
           const character = {
-            id: key,
-            ...data[key],
+            _id: key,
+            ...data.data[key]
           };
 
           characters.push(character);
         }
-
+        console.log(characters);
         setIsLoading(false);
         setLoadedCharacters(characters);
       });
@@ -38,7 +40,9 @@ function AllCharactersPage() {
   return (
     <div>
       <h1>All Characters</h1>
-      <CharacterList characters={loadedCharacters} />
+      <Container className="m-3 p-3">
+        <CharacterList characters={loadedCharacters} />
+      </Container>
     </div>
   );
 }

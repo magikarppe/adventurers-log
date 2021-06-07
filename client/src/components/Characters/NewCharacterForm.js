@@ -17,8 +17,7 @@ function NewCharacterForm(props) {
     function submitHandler(event) {
         event.preventDefault();
 
-        const enteredNames = nameInputRef.current.value;
-        
+        const enteredNames = nameInputRef.current.value;        
         const selectedRace = raceInputRef.current.value;
         const enteredStrength = strengthInputRef.current.value;
         const enteredDexterity = dexterityInputRef.current.value;
