@@ -5,7 +5,7 @@ import logo from './logo.png';
 
 export default function MainNavigation() {
   return (
-    <Navbar bg="dark" variant="dark">
+    <Navbar>
       <Container>
         <Link to="/">
           <Navbar.Brand>
