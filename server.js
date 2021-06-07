@@ -25,6 +25,7 @@ dotenv.config();
 
 mongoose.connect(
     process.env.DATABASE_ACCESS, () =>console.log("Database is connected")
+    
 );
 
 app.listen(PORT, () => console.log(`API Server now listening on PORT ${PORT}!`));
