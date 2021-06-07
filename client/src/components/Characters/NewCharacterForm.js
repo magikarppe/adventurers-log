@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-import CardComponent from '../ui/Card'
 import classes from './NewCharacterForm.module.css';
 
 function NewCharacterForm(props) {
@@ -53,7 +52,6 @@ function NewCharacterForm(props) {
     }
 
     return (
-        <CardComponent>
             <Form className={classes.form} onSubmit={submitHandler}>
                 <FormGroup className={classes.control}>
                     <Label for="name">Character Name</Label>
@@ -195,7 +193,6 @@ function NewCharacterForm(props) {
                     <Button>Add Character</Button>
                 </div>
             </Form>
-        </CardComponent>
     );
 }
 
