@@ -12,8 +12,8 @@ function NewCharacterForm(props) {
     const intelligenceInputRef = useRef();
     const wisdomInputRef = useRef();
     const charismaInputRef = useRef();
-    const speedInputRef = useRef();
     const classInputRef = useRef();
+    const imageURLInputRef = useRef();
     const storyInputRef = useRef();
     
     function submitHandler(event) {
@@ -27,8 +27,8 @@ function NewCharacterForm(props) {
         const enteredIntelligence = intelligenceInputRef.current.value;
         const enteredWisdom = wisdomInputRef.current.value;
         const enteredCharisma = charismaInputRef.current.value;
-        const enteredSpeed = speedInputRef.current.value;
         const selectedClass = classInputRef.current.value;
+        const enteredImageURL = imageURLInputRef.current.value;
         const enteredStory = storyInputRef.current.value;
 
         const characterAbilities = {
@@ -38,7 +38,6 @@ function NewCharacterForm(props) {
             intelligence: enteredIntelligence,
             wisdom: enteredWisdom,
             charisma: enteredCharisma,
-            speed: enteredSpeed
         };
 
         const characterData = {
@@ -46,7 +45,8 @@ function NewCharacterForm(props) {
             race: selectedRace,
             class: selectedClass,
             abilities: characterAbilities,
-            description: enteredStory
+            description: enteredStory,
+            imageURL: enteredImageURL
         };
         console.log(characterData);
         props.onAddCharacter(characterData);
@@ -150,16 +150,6 @@ function NewCharacterForm(props) {
                     />
                 </FormGroup>
                 <FormGroup className={classes.control}>
-                    <Label for="speed">Speed</Label>
-                    <Input 
-                    type="text"
-                    name="speed"
-                    required
-                    id="speed"
-                    innerRef={speedInputRef}
-                    />
-                </FormGroup>
-                <FormGroup className={classes.control}>
                     <Label for="class">class</Label>
                     <Input 
                     type="select"
@@ -180,6 +170,16 @@ function NewCharacterForm(props) {
                         <option>Warlock</option>
                         <option>Wizard</option>
                     </Input>
+                </FormGroup>
+                <FormGroup className={classes.control}>
+                    <Label for="imageURL">Image URL</Label>
+                    <Input 
+                    type="text"
+                    name="imageURL"
+                    required
+                    id="imageURL"
+                    innerRef={imageURLInputRef}
+                    />
                 </FormGroup>
                 <FormGroup className={classes.control}>
                     <Label for="story">Story</Label>

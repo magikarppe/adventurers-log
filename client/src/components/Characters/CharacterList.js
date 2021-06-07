@@ -14,6 +14,7 @@ function CharacterList(props) {
                     race={character.race}
                     class={character.class}
                     description={character.description}
+                    imageURL={character.imageURL}
                 />
             )}
             </Row>
