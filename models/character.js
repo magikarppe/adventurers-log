@@ -28,7 +28,6 @@ const abilitiesSchema = new Schema({
     },
     speed: {
         type: Number,
-        required: true
     },
     languages: {
         type: Array,
@@ -57,10 +56,13 @@ const charSchema = new Schema({
         type: String, 
         required: true 
     },
+    imageURL: {
+        type: String
+    },
     date: { 
         type: Date, 
         default: Date.now 
-    },
+    }
 });
 
 
