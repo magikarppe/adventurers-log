@@ -20,11 +20,11 @@ export default function MainNavigation() {
           </Navbar.Brand>
         </Link>
         <Nav className="me-auto">
-          <Nav.Item>
-            <Link to="/">Home</Link>
+         <Nav.Item>
+            <Link to="/">All Characters</Link>
           </Nav.Item>
           <Nav.Item>
-            <Link to="/newCharacter">Create</Link>
+            <Link to="/newCharacter">New Characters</Link>
           </Nav.Item>
           <Nav.Item>
             <Link to="/myCharacters">My Characters</Link>
