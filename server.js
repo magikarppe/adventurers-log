@@ -24,7 +24,7 @@ app.use(routes);
 dotenv.config();
 
 mongoose.connect(
-    process.env.DATABASE_ACCESS||"mongodb://localhost/adventurerslog", () =>console.log("Database is connected")
+    process.env.DATABASE_ACCESS, () =>console.log("Database is connected")
     
 );
 
