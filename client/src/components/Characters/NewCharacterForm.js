@@ -17,7 +17,8 @@ function NewCharacterForm(props) {
     function submitHandler(event) {
         event.preventDefault();
 
-        const enteredName = nameInputRef.current.value;
+        const enteredNames = nameInputRef.current.value;
+        
         const selectedRace = raceInputRef.current.value;
         const enteredStrength = strengthInputRef.current.value;
         const enteredDexterity = dexterityInputRef.current.value;
@@ -40,13 +41,13 @@ function NewCharacterForm(props) {
         };
 
         const characterData = {
-            name: enteredName,
+            name: enteredNames,
             race: selectedRace,
-            classId: selectedClass,
+            class: selectedClass,
             abilities: characterAbilities,
             description: enteredStory
         };
-
+        console.log(characterData);
         props.onAddCharacter(characterData);
     }
 
@@ -59,7 +60,7 @@ function NewCharacterForm(props) {
                 name="characterName"
                 required
                 id="name"
-                ref={nameInputRef}
+                innerRef={nameInputRef}
                 />
             </FormGroup>
             <FormGroup>
@@ -69,7 +70,7 @@ function NewCharacterForm(props) {
                 name="characterRace"
                 required
                 id="race"
-                ref={raceInputRef}>
+                innerRef={raceInputRef}>
                     <option>Dragonborn</option>
                     <option>Hill Dwarf</option>
                     <option>Mountain Dwarf</option>
@@ -93,7 +94,7 @@ function NewCharacterForm(props) {
                 name="strength"
                 required
                 id="strength"
-                ref={strengthInputRef}
+                innerRef={strengthInputRef}
                 />
             </FormGroup>
             <FormGroup>
@@ -103,7 +104,7 @@ function NewCharacterForm(props) {
                 name="dexterity"
                 required
                 id="dexterity"
-                ref={dexterityInputRef}
+                innerRef={dexterityInputRef}
                 />
             </FormGroup>
             <FormGroup>
@@ -113,7 +114,7 @@ function NewCharacterForm(props) {
                 name="constitution"
                 required
                 id="constitution"
-                ref={constitutionInputRef}
+                innerRef={constitutionInputRef}
                 />
             </FormGroup>
             <FormGroup>
@@ -123,7 +124,7 @@ function NewCharacterForm(props) {
                 name="intelligence"
                 required
                 id="intelligence"
-                ref={intelligenceInputRef}
+                innerRef={intelligenceInputRef}
                 />
             </FormGroup>
             <FormGroup>
@@ -133,7 +134,7 @@ function NewCharacterForm(props) {
                 name="wisdom"
                 required
                 id="wisdom"
-                ref={wisdomInputRef}
+                innerRef={wisdomInputRef}
                 />
             </FormGroup>
             <FormGroup>
@@ -143,7 +144,7 @@ function NewCharacterForm(props) {
                 name="charisma"
                 required
                 id="charisma"
-                ref={charismaInputRef}
+                innerRef={charismaInputRef}
                 />
             </FormGroup>
             <FormGroup>
@@ -153,7 +154,7 @@ function NewCharacterForm(props) {
                 name="speed"
                 required
                 id="speed"
-                ref={speedInputRef}
+                innerRef={speedInputRef}
                 />
             </FormGroup>
             <FormGroup>
@@ -163,7 +164,7 @@ function NewCharacterForm(props) {
                 name="characterclass"
                 required
                 id="class"
-                ref={classInputRef}>
+                innerRef={classInputRef}>
                     <option>Barbarian</option>
                     <option>Bard</option>
                     <option>Cleric</option>
@@ -185,7 +186,7 @@ function NewCharacterForm(props) {
                 name="story"
                 required
                 id="story"
-                ref={storyInputRef}
+                innerRef={storyInputRef}
                 />
             </FormGroup>           
 

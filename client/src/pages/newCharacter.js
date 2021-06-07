@@ -7,7 +7,6 @@ function NewCharacterPage() {
     const history = useHistory();
 
   function addCharacterHandler(characterData) {
-    console.log(characterData)
     API.saveCharacter(characterData)
       .then(() => {
         history.replace('/');
