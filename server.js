@@ -24,7 +24,7 @@ app.use(routes);
 dotenv.config();
 
 mongoose.connect(
-    process.env.MONGODB_URI || 'mongodb://localhost/adventuretable',
+    process.env.MONGODB_URI || 'mongodb://localhost/api',
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
@@ -32,10 +32,5 @@ mongoose.connect(
       useFindAndModify: false
     }
   );
-
-mongoose.connect(
-    process.env.DATABASE_ACCESS, () =>console.log("Database is connected")
-    
-);
 
 app.listen(PORT, () => console.log(`API Server now listening on PORT ${PORT}!`));
