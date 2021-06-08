@@ -11,6 +11,8 @@
   The user will have the choice to create a profile, create a character, take notes, and start a journey into D&D.
 
   Run on React Framework with MongoDB, Mongoose and handle routes with Express.
+  
+  Two additional Packages we used are React Strap and React BootStrap.
 
 
   ## Heroku Deploy
@@ -28,8 +30,8 @@
   # Installation
 
   npm i
-  npm bootstrap
-  npm reactstrap
+  npm install react-bootstrap
+  npm install --save reactstrap react react-dom
   node server.js
   npm run start
 
