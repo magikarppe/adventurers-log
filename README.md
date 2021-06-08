@@ -30,10 +30,6 @@
   # Installation
 
   npm i
-  npm install react-bootstrap
-  npm install --save reactstrap react react-dom
-  node server.js
-  npm run start
 
   # Usage
   
