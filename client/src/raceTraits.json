@@ -76,8 +76,8 @@
                         "damage type": "Cold",
                         "breath weapon": "15 ft. cone (Dex. save)"
                     }
-                ],
-
+                ]
+            },
             {
                 "id": 2,
                 "ability": "Breath Weapon",
