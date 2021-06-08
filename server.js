@@ -24,6 +24,16 @@ app.use(routes);
 dotenv.config();
 
 mongoose.connect(
+    process.env.MONGODB_URI || 'mongodb://localhost/adventuretable',
+    {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+      useCreateIndex: true,
+      useFindAndModify: false
+    }
+  );
+
+mongoose.connect(
     process.env.DATABASE_ACCESS, () =>console.log("Database is connected")
     
 );
